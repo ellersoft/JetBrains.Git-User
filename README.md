@@ -1,0 +1,3 @@
+This is a really simple plugin for the JetBrains IDE's (all of them) that allows one to set the `[user]` -> `name` and `email` attributes in the `.git/config` file via a simple GUI. This will override the Git Global configuration for the specific project.
+
+This is located in the Menu under VCS -> Git -> Project User...

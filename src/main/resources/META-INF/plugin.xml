@@ -4,7 +4,7 @@
     <vendor email="jbpsupport@ellersoft.com" url="http://www.ellersoft.com">Ellersoft LLC</vendor>
 
     <description><![CDATA[
-    Location: VCS -> Git -> Project Author / User. Provides a UI for editing the local Git repository author "user" information for the current project.
+    Location: VCS -> Git -> Project User. Provides a UI for editing the local Git repository author "user" information for the current project.
     ]]></description>
 
     <depends>com.intellij.modules.lang</depends>
