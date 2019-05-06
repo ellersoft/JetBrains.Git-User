@@ -15,6 +15,10 @@ public class EditAuthorAction extends AnAction implements AnAction.TransparentUp
     private static VirtualFile getGitDirectory(@NotNull Project project) {
         VirtualFile vfs = project.getProjectFile();
         VirtualFile git = null;
+
+        if (vfs == null) {
+            vfs = project.getWorkspaceFile();
+        }
         
         while (git == null && vfs != null) {
             git = vfs.findChild(".git");
