@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.ellersoft.jetbrains'
-version '1.1-STABLE'
+version '1.2-STABLE'
 
 sourceCompatibility = 1.8
 
@@ -21,6 +21,8 @@ intellij {
 }
 patchPluginXml {
     changeNotes """
+      Version 1.2<br/>
+      Fixed a build artifact that leaked<br />
       Version 1.1<br/>
       Fixed an issue with Rider needing a different file system API<br />
       Version 1<br/>
