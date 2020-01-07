@@ -7,7 +7,8 @@
     Location: VCS -> Git -> Project User. Provides a UI for editing the local Git repository author "user" information for the current project.
     ]]></description>
 
-    <depends>Git4Idea</depends>
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.vcs</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         

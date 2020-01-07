@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.ellersoft.jetbrains'
-version '1.5-STABLE'
+version '1.6-STABLE'
 
 sourceCompatibility = 1.8
 
@@ -22,6 +22,8 @@ intellij {
 }
 patchPluginXml {
     changeNotes """
+      Version 1.6<br />
+      Repaired dependencies to fully support 2019.3.<br />
       Version 1.5<br />
       Removed Git4Idea dependency as it seems to drop support for Rider proper. Updated for versions 2019.3.<br />
       Version 1.4<br />
