@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.ellersoft.jetbrains'
-version '1.6-STABLE'
+version '1.7-STABLE'
 
 sourceCompatibility = 1.8
 
@@ -17,11 +17,13 @@ dependencies {
 }
 
 intellij {
-    version '2019.3'
+    version '2020.1'
     plugins = []
 }
 patchPluginXml {
     changeNotes """
+      Version 1.7<br />
+      Updated for 2020.1.<br />
       Version 1.6<br />
       Repaired dependencies to fully support 2019.3.<br />
       Version 1.5<br />
