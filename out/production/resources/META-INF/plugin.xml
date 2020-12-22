@@ -7,7 +7,11 @@
     Location: VCS -> Git -> Project User. Provides a UI for editing the local Git repository author "user" information for the current project.
     ]]></description>
 
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.vcs</depends>
     <depends>Git4Idea</depends>
+
+    <idea-version since-build="203" />
 
     <extensions defaultExtensionNs="com.intellij">
         
@@ -15,8 +19,8 @@
 
     <actions>
         <group id="Ellersoft.Git.Menu.AuthorEdit" text="Git" popup="false">
-            <add-to-group group-id="Git.Menu" anchor="last"/>
             <action id="Ellersoft.Git.Menu.AuthorEdit.Action" class="EditAuthorAction" text="Project User..." description="Change Git User name and email for this project" />
+            <add-to-group group-id="Git.Menu" anchor="last"/>
         </group>
     </actions>
 </idea-plugin>

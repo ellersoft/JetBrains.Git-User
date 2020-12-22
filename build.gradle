@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.ellersoft.jetbrains'
-version '1.7-STABLE'
+version '1.8-STABLE'
 
 sourceCompatibility = 1.8
 
@@ -16,12 +16,10 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 
-intellij {
-    version '2020.1'
-    plugins = []
-}
 patchPluginXml {
     changeNotes """
+      Version 1.8<br />
+      Updated for Java 11 + 2020.3.<br />
       Version 1.7<br />
       Updated for 2020.1.<br />
       Version 1.6<br />
