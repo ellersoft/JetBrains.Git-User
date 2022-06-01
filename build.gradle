@@ -1,23 +1,30 @@
 plugins {
     id 'java'
-    id 'org.jetbrains.intellij' version '0.4.8'
+    id 'org.jetbrains.intellij' version '1.6.0'
 }
 
 group 'com.ellersoft.jetbrains'
-version '1.9-STABLE'
+version '1.10-STABLE'
 
-sourceCompatibility = 1.8
+sourceCompatibility = 11
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testImplementation group: 'junit', name: 'junit', version: '4.13.1'
+}
+
+intellij {
+    version = "2022.1"
 }
 
 patchPluginXml {
-    changeNotes """
+    changeNotes = """
+      Plugin located at VCS -> Git -> Project Author / User<br />
+      Version 1.10<br />
+      Updated for 2022.1 and JDK 17.<br />
       Version 1.9<br />
       Updated for 2021.1.<br />
       Version 1.8<br />
@@ -36,6 +43,5 @@ patchPluginXml {
       Fixed a build artifact that leaked<br />
       Version 1.1<br />
       Fixed an issue with Rider needing a different file system API<br />
-      Version 1<br />
-      Plugin located at VCS -> Git -> Project Author / User<br />"""
+      Version 1<br />"""
 }

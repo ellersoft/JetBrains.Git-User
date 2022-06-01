@@ -11,7 +11,7 @@
     <depends>com.intellij.modules.vcs</depends>
     <depends>Git4Idea</depends>
 
-    <idea-version since-build="203" />
+    <idea-version since-build="191.*" until-build="221.*" />
 
     <extensions defaultExtensionNs="com.intellij">
         
@@ -20,7 +20,7 @@
     <actions>
         <group id="Ellersoft.Git.Menu.AuthorEdit" text="Git" popup="false">
             <action id="Ellersoft.Git.Menu.AuthorEdit.Action" class="EditAuthorAction" text="Project User..." description="Change Git User name and email for this project" />
-            <add-to-group group-id="Git.Menu" anchor="last"/>
+            <add-to-group group-id="Git.MainMenu" anchor="last"/>
         </group>
     </actions>
 </idea-plugin>

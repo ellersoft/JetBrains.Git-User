@@ -11,7 +11,7 @@
     <depends>com.intellij.modules.vcs</depends>
     <depends>Git4Idea</depends>
 
-    <idea-version since-build="211.*" />
+    <idea-version since-build="191.*" until-build="221.*" />
 
     <extensions defaultExtensionNs="com.intellij">
         
